@@ -1,6 +1,6 @@
 package grubenCraft;
 
-public abstract class Werkzeug implements Cloneable {
+public abstract class Werkzeug {
 	
 	int haltbarkeit;
 	Qualitaet qualitaet;
@@ -13,4 +13,7 @@ public abstract class Werkzeug implements Cloneable {
 		this.haltbarkeit = qualitaet.haltbarkeit;
 	}
 	
+	protected Werkzeug clone() throws CloneNotSupportedException {
+		return (Werkzeug) super.clone();
+	}
 }

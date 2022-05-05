@@ -29,8 +29,7 @@ public class Spieler implements Cloneable {
 	protected Spieler clone() {
 		try {
 			Spieler klon = (Spieler) super.clone();
-			Spitzhacke werkzeugKlon = (Spitzhacke) werkzeug.clone();
-			klon.setWerkzeug(werkzeugKlon);
+			//klon.setWerkzeug(getWerkzeug().clone());
 			return klon;
 		}
 		catch(CloneNotSupportedException e) {
